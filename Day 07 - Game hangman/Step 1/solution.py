@@ -3,8 +3,8 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from task.hangman_words import word_list
-from task.hangman_art import stages
-from task.hangman_art import logo
+from task.hangman_art import stages, logo
+
 
 print(f"Bienvenido al juego {logo}")
 
