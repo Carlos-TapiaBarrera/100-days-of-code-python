@@ -1,3 +1,4 @@
+
 Your goal is to build a [Hangman game](https://en.wikipedia.org/wiki/Hangman_(game)) using everything you have learnt about Python programming.
 
 ### Demo Final Project
@@ -26,5 +27,7 @@ Check if the letter the user guessed `guess` is one of the letters in the `chose
   You can loop through Strings the same way you can loop through Lists - by using the `for in` loop.
     Try Googling: "Loop through strings python"
 </div>
+
+
 
 
