@@ -3,6 +3,7 @@ Create a function called `decrypt()` that takes `original_text` and `shift_amoun
 
 ### TODO-2: 
 Inside the `decrypt()` function, shift each letter of the `original_text` forwards in the alphabet *backwards* by the `shift_amount` and print the decrypted text.
+Dentro de la función `decrypt()`, desplaza cada letra del `original_text` hacia adelante en el alfabeto *hacia atrás* un número igual a `shift_amount` e imprime el texto descifrado.
 
 <div class="hint">
   You can multiply any number by -1 to make it a negative number.

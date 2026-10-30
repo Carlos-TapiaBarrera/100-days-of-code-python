@@ -29,11 +29,18 @@ Where each of the letters of 'hello' is shifted up by 1.
 <div class="hint">
 Let's breakdown the problem:
 
-  1. You need a for loop to loop through each of the letters in the plain_text. 
+  1. You need a for loop to loop through each of the letters in the plain_text.
+     Necesitas un bucle «for» para recorrer cada una de las letras del texto_sin_formato. 
+
   2. Find the position of each letter in the alphabet List
+     Averigua la posición de cada letra en la lista del alfabeto
+
 3. Add the user desired shift_amount to the position to get the position of the encoded letter.
+  Suma el valor «shift_amount» que desee el usuario a la posición para obtener la posición de la letra codificada.
 4. Find the corresponding letter for that position.
+  Busca la letra correspondiente a esa posición.
 5. Add each encoded letter to a new string and print it out after the loop ends.
+  Añade cada letra codificada a una nueva cadena y muéstrala en pantalla una vez finalizado el bucle.
 
 </div>
 

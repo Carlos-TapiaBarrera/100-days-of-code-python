@@ -1,0 +1,64 @@
+import art
+
+print(art.logo)
+
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+def caesar():
+    direction = input ("Type 'encode' to encrypt, type 'decode' to decrypt: ").lower()
+    if direction == "encode":
+        encrypt()
+    elif direction == "decode":
+        decrypt()
+    else:
+        print("No corresponde")
+
+def encrypt():
+    #direction = input("Type 'encode' to encrypt, type 'decode' to decrypt: ").lower()
+    original_text = input(str("Ingrese el texto: ")).lower()
+    shift_amount = int(input("Ingrese el numero de posicion: "))
+    letra_acumulada = ""
+
+    for i in original_text:
+        if i not in alphabet:
+           letra_acumulada += i
+        else:
+            result = alphabet.index(i)
+            result += shift_amount
+            result %= 26
+            letra_acumulada += alphabet[result]
+    print (letra_acumulada)
+       
+def decrypt():
+
+    #direction = input("Type 'encode' to encrypt, type 'decode' to decrypt: ").lower()
+    original_text = input("Type your message: ").lower()
+    shift_amount = int(input("Type the shift number: "))
+    decifrar=""
+
+    for i in original_text:
+        if i not in alphabet:
+            decifrar += i
+        else:
+            result = alphabet.index (i) #busca
+            result += shift_amount #resta las posiciones
+            result %= 26 #obtiene el resto
+            decifrar += alphabet [result]
+    print(decifrar)
+restart ="yes"
+while restart == "yes":
+        caesar()
+        restart = input("Type 'yes' if you want to go again. Otherwise, type 'no'.").lower()
+
+
+
+
+
+
+
+
+
+
+
+    
+
